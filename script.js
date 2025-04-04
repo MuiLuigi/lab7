@@ -37,3 +37,13 @@ focus.addEventListener('focus', function() {
 focus.addEventListener('blur', function() {
     focusMessage.textContent = 'The box is now being blurred.'
 });
+
+//Event delegation
+const buttons = document.getElementById('buttons');
+const delegateMessage = document.getElementById('delegateMessage');
+
+buttons.addEventListener('click', function(b) {
+    if (b.target.tagName === 'BUTTON') {
+        delegateMessage.textContent = `Your favourite Mario character is: ${b.target.textContent}`;
+    }
+});
