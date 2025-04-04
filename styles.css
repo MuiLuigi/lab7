@@ -1,0 +1,40 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(83, 162, 226);
+    text-align: center;
+    padding: 20px;
+    color: rgb(10, 10, 10);
+}
+
+h1{
+    color: aliceblue;
+}
+
+.container {
+    text-align: center;
+    background-color: aqua;
+    padding: 20px;
+}
+
+form{
+    background-color: blue;
+    padding: 20px;
+}
+
+/* Media Queries for Mobile Devices */
+@media only screen and (max-width: 600px) {
+    header, footer, body {
+        padding: 10px;
+    }
+
+    nav ul li {
+        display: block;
+        text-align: center;
+        margin: 5px 0;
+    }
+
+    section {
+        padding: 10px;
+        margin: 10px;
+    }
+}
