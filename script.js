@@ -18,3 +18,11 @@ keys.addEventListener('keydown', function(keyDisplay) {
 });
 
 //Form Event
+const form = document.getElementById('form');
+const formMessage = document.getElementById('formMessage');
+const hero = document.getElementById('hero');
+
+form.addEventListener('submit', function(event) {
+    event.preventDefault();
+    formMessage.textContent = `The form has been submitted! Your favourite hero is: ${hero.value}`
+});
