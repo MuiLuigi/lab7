@@ -26,3 +26,14 @@ form.addEventListener('submit', function(event) {
     event.preventDefault();
     formMessage.textContent = `The form has been submitted! Your favourite hero is: ${hero.value}`
 });
+
+//Focus and Blur Event
+const focus = document.getElementById('focus');
+const focusMessage = document.getElementById('focusMessage');
+
+focus.addEventListener('focus', function() {
+    focusMessage.textContent = 'The box is being focused.'
+});
+focus.addEventListener('blur', function() {
+    focusMessage.textContent = 'The box is now being blurred.'
+});
